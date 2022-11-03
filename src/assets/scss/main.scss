@@ -1,0 +1,34 @@
+@import 'animations';
+@import 'buttons';
+@import 'nav';
+@import 'layout';
+@import 'colors';
+@import 'text';
+@import 'images';
+@import 'utilities';
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&display=swap');
+
+html, body {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+   }
+
+body {
+    width: 100%;
+    height: 100vh;
+    max-width: 1400px;
+    min-height: 100vh;
+    // overflow-x: hidden;
+    margin: 0 auto;
+    font-family: 'Inter', Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    color: #222222;
+}
+
+// scroll snapping: https://css-tricks.com/practical-css-scroll-snapping/
+
+//   section {
+//     /* height: 100vh; */
+//     scroll-snap-align: start;
+//   }

@@ -1,0 +1,45 @@
+// height
+
+.min-vh-75 {
+    min-height: 75vh;
+}
+
+.min-vh-50 {
+    min-height: 50vh;
+}
+
+// width
+
+.w-md-50 {
+    width: 50%;
+}
+
+@media (max-width: 991px) {
+    .w-md-50 {
+        width: 100%;
+    }
+}
+
+// borders
+
+.rounded-xl {
+    border-radius: 22px;
+}
+
+// position
+
+.z--1 {
+    z-index: -1;
+}
+
+.z-0 {
+    z-index: 0;
+}
+
+.z-1 {
+    z-index: 1;
+}
+
+.object-fit {
+    object-fit: cover;
+}

@@ -1,0 +1,104 @@
+p > a {
+  @extend .text-info;
+}
+
+/* text */
+
+h1,
+.h1,
+.h2,
+h2,
+.h3,
+h3,
+h4,
+.h4,
+.navbar-brand,
+h5,
+.h5,
+h6,
+p {
+  font-family: 'Inter', "Helvetica Neue", Helvetica, Arial sans-serif;
+}
+
+h5,
+.h5 {
+  letter-spacing: -1px;
+}
+
+.site-title {
+  color: transparent;
+  font-size: 23vmin;
+  font-weight: 900;
+  line-height: 85%;
+  letter-spacing: -3px;
+  margin: 0;
+  -webkit-text-stroke: 3px #ffffff;
+  // text-shadow: 1px 1px 5px #dcd2c8, 3px 3px 10px #dcd2c8, 6px 6px 5px #dcd2c8;
+}
+
+.site-subtitle {
+  letter-spacing: -1px;
+  line-height: 100%;
+  font-size: 5vmin;
+}
+
+.section-title {
+  font-size: 48px;
+  font-weight: 900;
+  line-height: 100%;
+  letter-spacing: -3px;
+  padding: 15px 0;
+  margin: 0;
+}
+
+// effects
+
+.fw-900 {
+  font-weight: 900;
+}
+
+.text-shadow {
+  text-shadow: 0 0 10px #444, 0 0 10px #444, 0 0 10px #444, 0 0 10px #444, 0 0 10px #444, 0 0 10px #444, 0 0 10px #444,
+    0 0 10px #444;
+}
+
+/* media queries */
+
+@media (max-width: 992px) {
+  .nav-link {
+    border-bottom: 1px solid grey;
+    padding: 16px 0;
+  }
+  .order-1-md {
+    -webkit-box-ordinal-group: 2;
+    -ms-flex-order: 1;
+    order: 1;
+  }
+  .order-12-md {
+    -webkit-box-ordinal-group: 13;
+    -ms-flex-order: 12;
+    order: 12;
+  }
+}
+
+@media (max-width: 834px) {
+  .bg-bulb {
+    background-position: 90% 100%;
+  }
+}
+
+@media (max-width: 601px) {
+  .site-title {
+    font-size: 15vmin;
+    letter-spacing: -2px;
+  }
+  .section-title {
+    font-size: 37px;
+  }
+  p {
+    font-size: 19px;
+  }
+  .bg-bulb {
+    background-position: 85% 100%;
+  }
+}

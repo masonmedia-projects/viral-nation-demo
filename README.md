@@ -10,10 +10,10 @@ The core functionality revolves around aggregating data from social media platfo
 
 ## Inspiration
 
-Pixlee.com
-Coolors.com
-Pinterest
-Main social outlets
+- Pixlee.com
+- Coolors.com
+- Pinterest
+- Main social outlets
 
 ## User flow
 
@@ -25,14 +25,14 @@ The second screen takes the user to a page with the app's 4 main functional area
 **Learn** - (Not developed) This page would take the user to a section showing articles and video tutorials to help Jason/the user to develop greater skill in content creation.
 **Archive** - The users "cart", the archive is where items a user adds are saved for future inspiration and further exploration.
 
-### Main Dashboard (Trends)
+## Main Dashboard (Trends)
 
 The top tabbed navigation breaks up current social content into 4 areas: Trends, Users, Topics, and provides a Search tab which would allow the user to search the platform randomly.  Each of these tabs shows data from a selected social channel, chosen from the right sidenav popout (the list icon along with the gear icon in the subnav):
 
-*Trends* - returns a list of trending items, top hashtags, articles, topics, etc.
-*Users* - returns a list of top users ranked by followers, likes, shares, stars or whatever that platform uses to prioritize.
-*Topics* - returns an array of articles on the subject of social media, influencers/ing, content creation, etc.
-*Search* - Provides a searchbar to explore the plaform directly. Results would be returned below the search banner.
+*Trends* - returns a list of trending items, top hashtags, articles, topics, etc.  
+*Users* - returns a list of top users ranked by followers, likes, shares, stars or whatever that platform uses to prioritize.  
+*Topics* - returns an array of articles on the subject of social media, influencers/ing, content creation, etc.  
+*Search* - Provides a searchbar to explore the plaform directly. Results would be returned below the search banner.  
 
 Each item/user/article piece of content would offer a number of options for interaction/engagement: a button to add an item to the user's own archive area which stores chosen content like a shopping cart; an option to star or pin or mark as important; a link to visit that item at the source (click to open a new tab in actual Youtube or Instagram), or a ways to explore it more fully via modals which would elaborate and offer further content.
 

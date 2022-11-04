@@ -8,6 +8,7 @@
                 <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                 <div class="navbar-nav ms-auto">
                     <router-link class="nav-link" to="/mycreator">Home</router-link>
+                    <router-link class="nav-link" to="/dashboard">Dashboard</router-link>
                     <router-link class="nav-link" to="/about">About</router-link>
                     <router-link class="nav-link" to="/create">Create</router-link>
                     <router-link class="nav-link" to="/blog">Blog</router-link>

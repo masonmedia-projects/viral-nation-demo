@@ -20,7 +20,9 @@ import Nav from './components/TheNav.vue'
     </div> -->
   </header>
 
+<transition name="fade" mode="out-in">
   <RouterView />
+  </transition>
   </div>
 </template>
 

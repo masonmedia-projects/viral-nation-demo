@@ -19,7 +19,8 @@ The core functionality revolves around aggregating data from social media platfo
 
 The user hits a home/splash screen welcoming them to the app and offers two buttons: a sign up with modal for new users, and get started, which allows users to continue on to use the app without an account (this option would not allow users to save items to their archive). 
 
-The second screen takes the user to a page with the app's 4 main functional areas: 
+The second screen takes the user to a page with the app's 4 main functional areas:    
+
 **Today**: providing Jason with curated content for daily inspiration. The idea behind this was to offer a small cross section of the day's top trending items from different outlets and in different formats (user accounts, videos, articles). Because Jason doesn't have time to follow social trends, he can have the app show him trending content. The idea could be fleshed out to be either 3-4 items total so as not to overload him, or offer 3-4 items in the above user, video, article categories. 
 - **Trends**: takes the user to the app's main dashboard. In it the user is shown a collection of information organized in a few ways. 
 - **Learn**: (Not developed) This page would take the user to a section showing articles and video tutorials to help Jason/the user to develop greater skill in content creation.

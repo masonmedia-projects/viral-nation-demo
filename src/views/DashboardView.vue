@@ -26,17 +26,17 @@
          </div>
          <div class="offcanvas-body">
             <ul class="list-unstyled">
-               <router-link to="/social/instagram">
+               <router-link to="/instagram">
                     <li class="py-4 fs-5 fw-900 text-secondary border-bottom">
                         <img class="me-1" style="width: 25px" src="@/assets/img/instagram.svg" alt="">  Instagram
                     </li>
                </router-link>
-               <router-link to="/social/facebook">
+               <router-link to="/facebook">
                 <li class="py-4 fs-5 fw-900 text-secondary border-bottom">
                     <img class="me-1" style="width: 25px" src="@/assets/img/facebook.svg" alt=""> Facebook
                 </li>
                </router-link>
-               <router-link to="/social/youtube">
+               <router-link to="/youtube">
                 <li class="py-4 fs-5 fw-900 text-secondary border-bottom">
                     <img class="me-1" style="width: 25px" src="@/assets/img/youtube.svg" alt=""> Youtube
                 </li>

@@ -58,7 +58,7 @@
       <div class="container-fluid px-0">
         <div class="row m-0">
             <div class="col-lg-12 min-vh-50 left-center bg-light p-5">
-                <h1 class="display-1 text-primary fw-900 ls-1">Explore {{ this.$route.name }}.</h1>
+                <h1 class="display-1 text-primary fw-900 ls-1">Explore {{ location.name }}.</h1>
                 <h4 class="fw-bold text-secondary">Browse top trends, users, topics, and content.</h4>
             </div>
         </div>
@@ -146,19 +146,11 @@
 </template>
 <script setup>
    import { ref, onMounted } from 'vue'
+   import { useRoute } from "vue-router";
+   const location = useRoute();
    const userData = ref([])
    const url = "https://randomuser.me/api/?results=100"
-   
-   //   async function getData() {
-   //     const res = await fetch(url);
-   //     if(res.length !== 0) {
-   //         const finalRes = await res.json();
-   //         console.log(userData)
-   //     }
-       
-   //   }
-   
-   //  getData()
+
     const content = ref([]);
     const posts = ref([]);
     const users = ref([])

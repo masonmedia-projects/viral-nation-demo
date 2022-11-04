@@ -61,9 +61,6 @@
                 <h1 class="display-1 lh-1 mb-3 text-primary fw-900 ls-1">Explore. Engage. Create.</h1>
                 <h4 class="fw-bold text-secondary mb-3">Browse top trends, users, topics, and content.</h4>
               <div class="d-flex ">
-                <router-link class="btn btn-lg btn-primary" to="instagram">IG</router-link>
-                <router-link class="btn btn-lg btn-primary" to="/instagram">IG</router-link>
-                <router-link class="btn btn-lg btn-primary" to="/facebook">FB</router-link>
                 <router-link to="/instagram">
                   <button class="btn btn-link me-3">
                     <img style="width: 60px" src="@/assets/img/instagram.svg" alt="">

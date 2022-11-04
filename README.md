@@ -1,41 +1,23 @@
-# viral-nation-demo
+# Viral Nation App Demo
 
-This template should help get you started developing with Vue 3 in Vite.
+This is a working coded demo of a social media application attempting to meet the user requirements of scenario #2, Jason the up-and-coming influencer.
 
-## Recommended IDE Setup
+## Outline
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
 
-## Customize configuration
 
-See [Vite Configuration Reference](https://vitejs.dev/config/).
+## Inspiration
 
-## Project Setup
+## Functionality
 
-```sh
-npm install
-```
+## User flow
 
-### Compile and Hot-Reload for Development
+Jason is an up-and-coming influencer.  
 
-```sh
-npm run dev
-```
+He is looking for a platform to find inspirational content easily and save it for later so he can improve his content creation.  
 
-### Compile and Minify for Production
+He has a hard time understanding why certain content is getting viral and some don’t.  
 
-```sh
-npm run build
-```
+He doesn’t have enough time to follow current social media trends.  
 
-### Run Unit Tests with [Vitest](https://vitest.dev/)
-
-```sh
-npm run test:unit
-```
-
-### Lint with [ESLint](https://eslint.org/)
-
-```sh
-npm run lint
-```
+Can you solve his problem?

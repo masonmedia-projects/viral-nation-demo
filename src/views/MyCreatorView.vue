@@ -10,9 +10,11 @@
                     </router-link>
                 </div>
                 <div class="col-md-6 p-0">
+                    <router-link to="/dashboard">
                     <div class="m-2 min-vh-50 rounded-xl center-center" style="background: #662E9B">
-                        <h2 class="fs-1 fw-900">Search</h2>
+                        <h2 class="fs-1 fw-900">Trends</h2>
                     </div>
+                    </router-link>
                 </div>
                 <div class="col-md-6 p-0">
                     <div class="m-2 min-vh-50 rounded-xl center-center" style="background: #F86624">
@@ -34,5 +36,9 @@
 </script>
 
 <style scoped>
+a, a:hover {
+    color: #ffffff;
+    text-decoration: none;
+}
 
 </style>

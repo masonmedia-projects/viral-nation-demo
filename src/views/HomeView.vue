@@ -20,7 +20,7 @@ import Modal from '../components/Modal.vue'
           </div>
         </div>
         </div>
-        <Modal modalId="staticBackdrop" modalClose="modal"  />
+        <Modal modalId="staticBackdrop" modalClose="modal" :layout="1"  />
         <Modal modalId="loginModal" modalClose="login"  />
 
 <!-- Modal -->

@@ -33,19 +33,19 @@ const router = createRouter({
       component: () => import('../views/DashboardView.vue')
     },
     {
-      path: '/social/instagram',
+      path: '/instagram',
       name: 'Instagram',
-      component: () => import('../views/social/InstagramView.vue')
+      component: () => import('../views/InstagramView.vue')
     },
     {
-      path: '/social/facebook',
+      path: '/facebook',
       name: 'Facebook',
-      component: () => import('../views/social/FacebookView.vue')
+      component: () => import('../views/FacebookView.vue')
     },
     {
-      path: '/social/youtube',
+      path: '/youtube',
       name: 'Youtube',
-      component: () => import('../views/social/YoutubeView.vue')
+      component: () => import('../views/YoutubeView.vue')
     },
     {
       path: '/test',

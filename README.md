@@ -6,7 +6,7 @@ This is a working coded demo of a social media application attempting to meet th
 
 On reading the user/stakeholder requirements I envisioned an app that would provide Jason with daily inspirational content, show him top trends, users, and topics from all main social channels, and offer him an "archive" where he could save chosen items for further review. 
 
-The core functionality revolves around aggregating data from social media platforms in one place using their APIs, while the main working screen is a dahsboard rendering the data in different tabs and formats. 
+The core functionality revolves around aggregating data from social media platforms in one place using their APIs, while the main working screen is a dashboard rendering the data in different tabs and formats. 
 
 ## Inspiration
 

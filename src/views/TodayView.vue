@@ -59,28 +59,27 @@
                 </div>
               </div>
           </div>
-
+<!-- posts -->
 <div class="row w-100 px-5 pb-5">
     <div class="col-lg-12">
                   <h3 class="fw-900 border-bottom pb-3">Posts</h3>
               </div>
-          <div class="col-lg-4 col-md-6 p-0" v-for="(item, index) in posts.posts" :key="index">
+          <div class="col-lg-4 col-md-6 p-0" v-for="(item, index) in posts.data" :key="index">
                      <div class="card m-3 p-3 rounded-4 bg-light">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-person-circle mx-3 text-secondary" viewBox="0 0 16 16">
-                           <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
-                           <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"/>
-                        </svg>
+                        <img v-if="index == 0" src="https://picsum.photos/1200/600?random=1" class="w-100 rounded-4" alt="">
+                        <img v-if="index == 1" src="https://picsum.photos/1200/600?random=2" class="w-100 rounded-4" alt="">
+                        <img v-if="index == 2" src="https://picsum.photos/1200/600?random=3" class="w-100 rounded-4" alt="">
+                        
                         <div class="card-body">
-                           <h5 class="text-secondary fw-light">@{{ item.userId }}</h5>
-                           <span v-for="(i, index) in item.tags" :key="index" class="badge text-bg-light border me-1 mb-3">{{ i }}</span>
+                           <h5 class="text-secondary fw-light">@{{ item.author }}</h5>
+                           <span class="badge text-bg-light border me-1 mb-3">{{ item.genre }}</span>
                            <h5 class="card-title">{{ item.title }}</h5>
-                           <p class="card-text">{{ item.body.slice(0, 150) }}</p>
+                           <p class="card-text">{{ item.description }}</p>
                            <a href="#" class="btn btn-sm  btn-secondary">Read more</a>
                         </div>
                      </div>
                   </div>
-</div>
-
+            </div>
       </div>
   </div>
 </div>
@@ -90,6 +89,7 @@
 
 <script setup>
 import { ref, onMounted } from 'vue'
+// date
 const date = new Date();
 const months = ["January","February","March","April","May","June","July","August","September","October","November","December"];
 const month = months[date.getMonth()];
@@ -98,10 +98,9 @@ const day = date.getDay();
 
 const userData = ref([])
 const url = "https://randomuser.me/api/?results=100"
-
-//  getData()
  const content = ref([]);
- const posts = ref([])
+ const posts = ref([]);
+ const testData = ref([]);
 
   async function getData() {
     const res = await fetch("https://randomuser.me/api/?results=4");
@@ -110,11 +109,70 @@ const url = "https://randomuser.me/api/?results=100"
     console.log(finalRes.results)
   }
   async function getPosts() {
-    const res = await fetch("https://dummyjson.com/posts?limit=3");
+    const res = await fetch("https://fakerapi.it/api/v1/books?_quantity=3");
+    // const res = await fetch("https://dummyjson.com/posts?limit=3");
     const postData = await res.json();
     posts.value = postData;
-    console.log(postData.posts)
+    console.log(postData.data)
     }
+
+// async function getPosts(){
+//     const url1 = "https://fakerapi.it/api/v1/books?_quantity=3"
+//     const url2 = "https://picsum.photos/v2/list?page=2&limit=3"
+//     const responses = await Promise.all([fetch(url1), fetch(url2)])
+//     let data1 = await responses[0].json()
+//     let data2 = await responses[1].json()
+//     posts.value = data1.data, data2;
+//     console.log(data1, data2)
+// }
+
+// https://gomakethings.com/waiting-for-multiple-all-api-responses-to-complete-with-the-vanilla-js-promise.all-method/
+//    function getPosts()  {
+//        Promise.all([
+// 	fetch('https://fakerapi.it/api/v1/books?_quantity=4'),
+// 	fetch('https://jsonplaceholder.typicode.com/albums/2/photos')
+// ]).then(function (responses) {
+// 	return Promise.all(responses.map(function (response) {
+// 		return response.json();
+// 	}));
+// }).then(function (data) {
+//     posts.value = data;
+// 	console.log(posts.value);
+// }).catch(function (error) {
+// 	console.log(error);
+// });
+// }
+
+// https://hackmamba.io/blog/2020/12/aggregate-multiple-api-requests-with-promise-all/
+// const fetchNames = async () => {
+//       try {
+//         const res = await Promise.all([
+//           fetch("https://fakerapi.it/api/v1/books?_quantity=3"),
+//           fetch("https://picsum.photos/v2/list?page=2&limit=3"),
+//         //   fetch("./names-old.json")
+//         ]);
+//         const data = await Promise.all(res.map(r => r.json()))
+//         textData.value = data;
+//         console.log(textData.flat());
+//       } catch {
+//         throw Error("Promise failed");
+//       }
+// };
+
+// fetchNames()
+
+// function test() {
+//     Promise.all([
+//   fetch('https://fakerapi.it/api/v1/books?_quantity=3').then(resp => resp.json()),
+//   fetch('https://jsonplaceholder.typicode.com/albums/2/photos').then(resp => resp.json()),
+// //   fetch('https://jsonplaceholder.typicode.com/posts/3').then(resp => resp.json()),
+// ]).then((data) => {
+//     testData.value = data;
+//     console.log(testData)
+// })
+// }
+
+// test();
 
  getData();
  getPosts();

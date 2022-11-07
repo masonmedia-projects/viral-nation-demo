@@ -80,8 +80,8 @@
                      <img style="width: 150px" class="rounded-4 shadow" :src="item.picture.large" alt="...">
                   </div>
                   <div class="col-md-10 justify-content-center border border-start border-end-0 border-top-0 border-bottom-0 ps-4">
-                     <h5>{{ item.name.first }} {{ item.name.last }}</h5>
-                     <h6 class="text-secondary fw-light">@{{ item.login.username }}</h6>
+                     <h5 class="fw-bold">{{ item.name.first }} {{ item.name.last }}</h5>
+                     <h6 class="small text-secondary fw-bold">@{{ item.login.username }}</h6>
                      <p>Deserunt nostrud id velit ea exercitation. Ullamco ullamco eu Lorem dolor minim eu exercitation esse ad. Est est do ea elit. Duis in amet reprehenderit reprehenderit anim.</p>
                      <button class="btn btn-outline-success btn-sm me-2">add</button>
                      <button class="btn btn-outline-danger btn-sm me-2">remove</button>

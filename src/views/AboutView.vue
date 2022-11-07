@@ -13,7 +13,7 @@
       </div>
       <div class="row m-0 bg-dark text-light">
         <div class="col-lg-12 min-vh-100 left-center p-5">
-          <h1 class="display-2 lh-1 ls-1 fw-900">Launch your journey on the <router-link to="/mycreator"><span class="text-primary">My creator</span></router-link> page, and choose from the applications four main paths:</h1>
+          <h1 class="display-2 lh-1 ls-1 fw-900">Launch your journey on the <router-link to="/mycreator"><span class="text-primary">My creator</span></router-link> page, and choose from the application's four main paths:</h1>
         </div>
       </div>
       <div class="row m-0 bg-warning text-light">

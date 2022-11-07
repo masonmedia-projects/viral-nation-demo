@@ -16,14 +16,14 @@
           <h1 class="display-2 lh-1 ls-1 fw-900">Launch your journey on the <router-link to="/mycreator"><span class="text-primary">My creator</span></router-link> page, and choose from the application's four main paths:</h1>
         </div>
       </div>
-      <div class="row m-0 bg-warning text-light">
+      <div class="row m-0 bg-warning">
         <div class="col-lg-12 min-vh-100 left-center p-5">
-          <h1 class="display-2 lh-1 ls-1 fw-900">Peruse daily trends curated for you on the <router-link to="/today"><span class="fw-900 text-primary">Today</span></router-link> page</h1>
+          <h1 class="display-2 lh-1 ls-1 fw-900">Get inspired and stay current through curated daily content delivered for maximum ease of consumption and exploration on your <router-link to="/today"><span class="fw-900 text-primary">Today</span></router-link> page.</h1>
         </div>
       </div>
       <div class="row m-0 text-light" style="background: rgb(102, 46, 155);">
         <div class="col-lg-12 min-vh-100 left-center p-5">
-          <h1 class="display-2 lh-1 ls-1 fw-900">Explore top daily content including trends, users, and topics from all channels on your <router-link to="/dashboard"><span class="fw-900 text-warning">Dashboard</span></router-link> page.</h1>
+          <h1 class="display-2 lh-1 ls-1 fw-900">Explore top <router-link to="/dashboard"><span class="fw-900 text-warning">Trends</span></router-link> through daily content feeds giving you the most influential content and topics from major channels.</h1>
         </div>
       </div>
       <div class="row m-0 text-light" style="background:#F86624;">

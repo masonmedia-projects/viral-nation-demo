@@ -5,9 +5,9 @@ import Modal from '../components/Modal.vue'
 <template>
   <main>
     <div class="container-fluid px-0">
-      <div class="row m-3 min-vh-100">
-        <div class="bg-primary center-center" style="border-radius: 33px;">
-        <div class="col-lg-12 center-center">
+      <div class="row m-3 bg-primary rounded-5" style="min-height: 85vh">
+        <div class="center-center" style="border-radius: 33px;">
+        <div class="col-lg-12 center-center p-5">
           <h1 class="site-title fw-900">creator</h1>
           <p class="h5 col-md-6 col-offset-md-3 my-4 text-light">Increase content visibility, expand social media influence, and garner insights into top trends and best practices for content creation.</p>
           <div class="d-flex mx-auto">

@@ -1,5 +1,11 @@
 # Viral Nation App Demo
 
+<img src="public/vn-homepage.png"
+     alt="Oakwood Guitar School homepage banner photo"
+     style="width: 100%; float: left; margin: 0 auto;" />
+
+## Intro
+
 This is a working coded demo of a social media application attempting to meet the user requirements of scenario #2, Jason the up-and-coming influencer.
 
 ## Outline
